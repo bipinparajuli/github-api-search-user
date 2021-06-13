@@ -4,14 +4,14 @@ import { BrowserRouter as Router, Route,Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <AuthWrapper>
+    // <AuthWrapper>
 
       <Router>
         <Switch>
 
-        <PrivateRoute path="/" exact={true}>
+        {/* <PrivateRoute path="/" exact={true}> */}
           <Dashboard></Dashboard>  
-        </PrivateRoute>
+        {/* </PrivateRoute> */}
         
         <Route path="/login" exact>
           <Login />
@@ -24,7 +24,7 @@ function App() {
         </Switch>
 
       </Router>
-    </AuthWrapper>
+    //  </AuthWrapper>
 
   );
 }
