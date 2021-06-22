@@ -12,7 +12,9 @@ const Followers = () => {
 
         const {avatar_url:img,html_url,login} =follower;
         return <article key={index}>
+          <div className="img_container">
           <img src={img} alt={login} />
+          </div>
           <div>
             <h4>{login}</h4>
           </div>
@@ -68,6 +70,7 @@ const Wrapper = styled.article`
       width: 45px;
       border-radius: 50%;
       object-fit: cover;
+
     }
     h4 {
       margin-bottom: 0;
